@@ -1,6 +1,6 @@
 BootStrap: localimage
-From: pytorch_latest.sif
-# singularity pull docker://pytorch/pytorch:latest
+From: continuumio/anaconda3:latest
+#docker pull continuumio/anaconda3:latest
 
 %post
     apt-get update
