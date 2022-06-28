@@ -1,5 +1,4 @@
 BootStrap: localimage
-From: conda-cuda-torch.sif
 # singularity pull docker://pytorch/pytorch:latest
 
 %post
