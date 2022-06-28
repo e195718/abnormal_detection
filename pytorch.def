@@ -1,6 +1,6 @@
 BootStrap: localimage
-From: tensorflow_latest-gpu-py3.sif
-# singularity pull docker://tensorflow/tensorflow:latest-gpu-py3
+From: conda-cuda-torch.sif
+# singularity pull docker://pytorch/pytorch:latest
 
 %post
     apt-key del 3bf863cc
@@ -8,9 +8,7 @@ From: tensorflow_latest-gpu-py3.sif
     apt-get update
     apt-get install -y libgl1-mesa-dev
     apt install -y --no-install-recommends graphviz
-    pip install --upgrade pip
-    pip install keras==2.3 keras-bert sentencepiece scikit-learn transformers matplotlib pydot
-    pip install tensorflow-gpu==2.2.0
-    pip install tensorflow_hub
-    pip install opencv-python
-    pip install tensorflow_datasets
+    conda install pytorch==1.10.1 
+    conda install torchvision==0.11.2 
+    conda install torchaudio==0.10.1 
+    conda install cudatoolkit=11.3 -c pytorch -c conda-forge
