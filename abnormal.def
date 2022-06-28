@@ -7,4 +7,4 @@ From: anaconda3_latest.sif
     apt-get install -y libgl1-mesa-dev
     apt install -y --no-install-recommends graphviz
     conda install scikit-learn
-    conda install pytorch==1.5.1
+    conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
