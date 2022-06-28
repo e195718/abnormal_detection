@@ -1,4 +1,5 @@
 BootStrap: localimage
+From: pytorch_latest.sif
 # singularity pull docker://pytorch/pytorch:latest
 
 %post
