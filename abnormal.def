@@ -1,5 +1,5 @@
 BootStrap: localimage
-From: continuumio/anaconda3:latest
+From: anaconda3_latest.sif
 #docker pull continuumio/anaconda3:latest
 
 %post
