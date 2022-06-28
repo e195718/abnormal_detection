@@ -3,6 +3,4 @@ From: pytorch_latest.sif
 # singularity pull docker://pytorch/pytorch:latest
 
 %post
-    apt-key del 3bf863cc
-    apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/3bf863cc.pub
-
+    apt-get update
