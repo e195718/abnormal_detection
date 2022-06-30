@@ -6,5 +6,5 @@
 #SBATCH --gpus tesla:1
 
 date
-singularity exec --nv ~/abnormal/template/abnormal_detection/anaconda3_latest.sif python src/main.py
+singularity exec --nv ~/abnormal/template/abnormal_detection/anaconda3_latest.sif python main.py
 date
