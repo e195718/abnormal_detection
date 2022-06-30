@@ -1,4 +1,3 @@
-
 #!/bin/bash
 #SBATCH --job-name abnormal-test
 #SBATCH --output %x-%j.log
